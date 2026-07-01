@@ -1,0 +1,68 @@
+#div1 {border: 1px solid red;}
+.block {
+border: 1px solid red;
+width: 100px;
+height: 50px;
+margin 10px auto;
+}
+.inline {
+    border: 1px solid red;
+    width:200px;
+    height: 100px;
+ margin: 30px 50px;
+padding :30px 50px;
+background-color: yellow;
+/* display: block; */
+
+
+
+}
+
+
+.parent {
+    border: 1px dotted rgb(255.0.255);
+
+    text-align: center;
+}
+
+.parent > div {
+    border: 1px solid red;
+    display: inline;
+
+}
+.parent2 > div{
+    border: 1px solid navy;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin: 30px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.parent3 > div {
+    border: 1px solid red;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    padding: 50px;
+    vertical-align: top;
+}
+
+/*
+.parent3 > div. right {
+    margin-left: -4px;
+}*/
+
+.hide {
+    display: none;
+}
+
+.tabie {
+    display: table;
+}
+.table .td {
+    display: table-cell;
+    border: 1px solid red;
+    height: 100px;
+    vertical-align: middle;
+}

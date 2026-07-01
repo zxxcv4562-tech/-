@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼</title>
+</head>
+<body>
+<form>
+    text : <input type="text"><br>
+    text(기본값) : <input><br>
+    text(value) : <input type="text" value="초기값"><br>
+    text(placeholder) : <input type="text" placeholder="기본값"><br>
+    text(readonly) : <input type="text" value="리드온리" readonly><br>
+    text(disabled) : <input type="text" value="비활성화" disabled><br>
+  <hr>  
+  password : <input type="password"><br>  
+  <hr>
+  input button : <input type="button" value="botton"><br>
+  button : <button type="button">버튼</button><br>
+  submit : <input type="submit" value="전송"><br>
+  submit : <input type="submit" value="전송"><br>
+  button(기본값 : submit) : <button>전송</button><br>
+  <button type="button"> <img src="asset/Spongebob-Christmas-PNG-Picture.png" alt></button>
+  <hr>
+
+
+checkbox :
+<input type="checkbox">샷추가
+<input type="checkbox" checked>펄추가
+<input type="checkbox" disabled>휘핑크림추가
+<input type="checkbox">시럽추가
+<input type="checkbox">얼음추가
+<br>
+radio :
+<input type="radio" name="china" checked>짜장면
+<input type="radio" name="china" disabled>마파두부밥
+<input type="radio" name="china">삼선짬뽕
+<br>
+<input type="radio" name="gender" value="남자">남자
+<input type="radio" name="gender" value="여자">여자
+<input type="radio" name="gender">미공개
+<br>
+<hr>
+select : 
+<select name="sel1">
+    <option>한식</option>
+    <option>중식</option>
+    <option>양식</option>
+    <option>일식</option>
+    <option>분식</option>
+    </select>
+<br>
+select : 
+<select name="점심메뉴" size="2" multiple>
+    <option value="한식">한식</option>
+    <option value="중식">중식</option>
+    <option value="양식">양식</option>
+    <option value="일식">일식</option>
+    <option value="분식">분식</option>
+</select>
+
+
+<br>
+<label><input type="checkbox">펄추가</label>
+<label><input type="checkbox">얼음추가</label>
+<label><input type="checkbox">휘핑크림추가</label>
+<label><input type="checkbox">시럽추가</label>
+<br>
+<label>
+<input type="checkbox" id="perl">
+<label for="perl">펄추가
+
+</label>
+</label>
+
+    <br>
+<textarea rows="10" cols="50"placeholder="placeholder">기본값</textarea>    
+<hr>
+reset : <input type="reset" value="reset"><br>
+<input type="color"><br>
+<input type="date" value="2026-06-24"><br>
+<input type="time"><br>
+number : <input type="number">
+
+range : <input type="range" min="10" max="100" step="10"
+</form>
+<hr>
+<!-- form 속성  
+     method : get, post
+     method 기본값 : get
+     action : 전송할 주소
+     action 기본값 : 현재 내 주소 -->
+
+
+
+
+<form method="get">
+ <input type="text" name="song"><br>
+ <input type="text"><br>
+ <input type="text" name="singer"><br>
+ <input type="submit" value="get 연습"><br>
+</form>
+<form method="get" action="https://search.naver.com/search.naver">
+    <input type="text" name="query"><br>
+    <input type="submit" value="네이버검색">
+</form>
+<form method="get" action="https://www.google.com/search?q">
+<input type="text" name="query"><br>
+<input type="submit" value="구글검색">
+ </form>
+<br>
+<form method="post" action="https://search.naver.com/search.naver">
+    <input type="text" name="query"><br>
+    <input type="submit" value="네이버검색">
+</form>
+</body>
+</html>
