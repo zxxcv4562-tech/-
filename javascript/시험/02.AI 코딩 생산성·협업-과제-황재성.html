@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT 전문 교육기관</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Pretendard',sans-serif;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+overflow:hidden;
+}
+
+.container{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+padding:40px 6%;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#D4AF37;
+letter-spacing:2px;
+}
+
+nav{
+display:flex;
+gap:35px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:15px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1.2fr 1fr;
+align-items:center;
+gap:50px;
+flex:1;
+}
+
+.left h1{
+font-size:60px;
+line-height:1.2;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.left h1 span{
+color:#D4AF37;
+}
+
+.left p{
+font-size:18px;
+color:#d5d5d5;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+button{
+padding:16px 38px;
+border:none;
+background:#D4AF37;
+color:black;
+font-weight:700;
+font-size:16px;
+border-radius:40px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:translateY(-3px);
+box-shadow:0 0 25px rgba(212,175,55,.4);
+}
+
+.course-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.card{
+background:#161616;
+border:1px solid rgba(212,175,55,.3);
+border-radius:18px;
+padding:28px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#D4AF37;
+box-shadow:0 0 30px rgba(212,175,55,.18);
+}
+
+.card h2{
+font-size:24px;
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+.card p{
+color:#d8d8d8;
+font-size:15px;
+line-height:1.7;
+}
+
+footer{
+display:flex;
+justify-content:center;
+color:#777;
+font-size:13px;
+padding-top:15px;
+}
+
+@media(max-width:900px){
+
+.container{
+padding:25px;
+}
+
+.hero{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.left{
+text-align:center;
+}
+
+.left h1{
+font-size:40px;
+}
+
+.course-box{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="logo">IT ACADEMY</div>
+
+<nav>
+<a href="#">교육과정</a>
+<a href="#">취업지원</a>
+<a href="#">교육문의</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="left">
+
+<h1>
+미래를 만드는<br>
+<span>IT 전문 교육기관</span>
+</h1>
+
+<p>
+실무 중심 프로젝트 교육으로 개발자와 AI 전문가를 양성합니다.<br>
+현업 멘토와 함께 취업까지 책임지는 프리미엄 교육.
+</p>
+
+<button>교육 상담 신청</button>
+
+</div>
+
+<div class="course-box">
+
+<div class="card">
+<h2>AI·데이터 분석 과정</h2>
+<p>
+Python, 머신러닝, 딥러닝, 생성형 AI, 데이터 분석 프로젝트까지 실무 중심 교육
+</p>
+</div>
+
+<div class="card">
+<h2>풀스택 웹 개발 과정</h2>
+<p>
+HTML, CSS, JavaScript, React, Spring Boot, AWS를 활용한 웹 개발 전문가 양성
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 IT Academy · Premium Education
+</footer>
+
+</div>
+
+</body>
+</html>

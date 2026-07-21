@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 연습</title>
+
+
+<style>
+#View{color: red;}
+.pizza{font-size: 2em;}
+
+.blue{
+    color: blue;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <h1 id="title">DOM 연습</h1> 
+    <div id="View">첫번째</div>
+    <div id="View" class="pizza">두번째</div>
+<ul id='메뉴'>
+    <li class="menu li1">치킨</li>
+    <li class="menu puzza">피자</li>
+    <li class="menu">똠양꿍</li>
+    <li>집밥</il>
+</ul>
+
+<img id= aha alt="아하모먼트" style='width: 100px;'src=
+"https://dcimg1.dcinside.com/viewimage.php?id=3eb4de21e9d73ab360b8dab04785736f&no=24b0d769e1d32ca73dea83fa11d028319fcc22bb8e6c7e0fd5579701e1bff5064abf11cee475015772a7a1d95dc4d48b36830006bde4571f6404873bd4ccabe16cc2ad104c92b6d6893048aa4c604957e0020bd8fb984d5c24a6634e051f98e53e1ad31868124f73b78ea9b7cb&orgExt">
+
+
+<div id="div1">div1</div>
+<div id="div2" class="bg-yellow">div2</div>
+
+
+
+
+
+
+
+
+
+       <script>
+//DOM 
+//Document Object Model
+//javascript로 수정이 가능한 대상
+console.log(document)
+
+//id 속성으로 DOM을 가져오기
+const title = document.getElementById('title')
+console.log(title)
+console.log(''+title)
+
+//없으면 null
+const title2 = document.getElementById('title2')
+console.log(title2)
+
+//동일한 id가 있어도 첫번째 DOM만 가져온다
+const View = document.getElementById('View')
+console.log(View)
+
+//tag로 찾기
+let divs = document.getElementsByTagName('div')
+console.log(divs)
+
+//없으면 lenght가 0인 배열
+let divs2 = document.getElementsByTagName('div2')
+console.log(divs2)
+
+if(divs2){
+    console.log('참')
+}
+
+//class로 찾기
+
+let menus = document.getElementsByClassName('menu')
+console.log(menus)
+
+let 메뉴 = document.getElementById('메뉴')
+let pizza = 메뉴.getElementsByClassName('pizza')
+console.log(pizza)
+
+//querySelector
+// css 선택자를 사용할 수 있다
+//여러개인 경우 첫번째 DOM만 돌려준다
+//없는 경우 null
+
+let View2 = document.querySelector('#View.pizza')
+console.log(View2)
+
+let View3 =  document.querySelector('#View')
+console.log(View3)
+
+let View4 =  document.querySelector('#View4')
+console.log(View4)
+
+let qsa = document.querySelectorAll('#View')
+console.log(qsa)
+
+
+
+//////////////////////////////////
+////속성
+//////////////////////////////////
+
+let aha = document.querySelector('#aha')
+console.log(aha)
+
+//속성값이 있는가?
+//readonly, disabled ,required 등 검사할때 좋다
+
+//et isSrc = aha.hasAttribute('src')
+//console.log('src',src)
+
+
+//////////////////////////////////
+////클래스 조작
+//////////////////////////////////
+
+let div1 = document.getElementById('div1')
+let div2 = document.getElementById('div2')
+
+
+
+div1.classList.add('blue')
+
+div2.classList.add('blue')
+
+div2.remove
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

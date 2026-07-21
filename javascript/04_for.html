@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+<script>
+/*for(let i=1; i <=10; i++){
+    console.log(i)
+}
+*/
+
+
+/*for(let i=1 ; i <=5; i++)
+{console.log(i)
+    if(i % 2 != 0){
+        console.log('${i}(홀)')}
+    else{
+        console.log('${i}(짝)')
+    }
+    
+}
+*/  
+
+/*for(let b=1; b<=6; b++){
+    console.log(b)
+}
+*/
+
+
+
+
+
+
+
+
+
+
+// for(let c=1; c<=6; c++){
+    // for(let d=1; d<=6; d++){
+    //  for(let e= c+d; e<=12; e++)
+        // console.log(e ,  )
+    // }
+// }
+   
+//1~45의 숫자 랜덤으로 뽑기
+
+
+for(let i = 1; i<=6; i++){
+let rand= parseInt(Math.random() *45) +1
+   console.log(rand)
+}
+
+
+
+for(let i=1; i<=100; i++){
+    if(i == 11){
+        console.log(i,'종료합니다')
+        break;
+    }
+console.log(i)
+}
+
+//총 4층의 주차건물
+//각 층에는 10대의 자리가 있다
+//내 차는 1층 첫번째부터 17번째 자리에 있다
+let cnt = 0
+let flag = false 
+for(let i=1; i<=4; i++){
+
+    for(let j=1; j<=10; j++){
+        cnt++
+        console.log(i,j,cnt+'번째')
+    
+    
+if(cnt >=17){
+    flag = true
+    break;
+}
+
+}
+
+if(flag == true){
+    break;
+}
+}
+
+for(let i=1; i<=10; i++){
+    if(i%2 == 0){
+        continue;
+    }
+
+    console.log(i)
+}
+
+console.log('-------------------------------------------------------------------------')
+
+let arr = [1,2,3,4,5,6,7]
+
+// for In 
+//in 앞의 변수 i에 현재 index를 저장
+//무조건 처음부터 끝까지
+for(let i in arr){
+console.log('i :', i)
+console.log('값 : ', arr[i])
+}
+
+console.log('-------------------------------------------------------------------------')
+//for of 
+//of 앞의 변수에 현재 값을 저장
+//무조건 처음부터 끝까지
+for(let i of arr){
+    console.log('i :', i)
+}
+// forEach : 각 항목별 반복 실행
+//전달인자 : 현재 값, 현재 index,배열 전체
+//retrun 없음
+console.log('-------------------------------------------------------------------------')
+
+let r1 = arr.forEach(function(element,index,array){ 
+    console.log('element',element) //현재값
+console.log('index',index)// 현재 index
+console.log('array',array)// 배열 전체
+
+})
+console.log(r1)//undefined
+
+console.log('-------------------------------------------------------------------------')
+let r2 = arr.map(function(el,i,a) {
+console.log(el,i,a)
+if(el %2 ==0){
+    return '짝'
+}
+else {
+    return '홀'
+}
+})
+console.log(r2)//undefind
+
+console.log('-------------------------------------------------------------------------')
+
+let movie = ['호프','스파이더맨-브랜드 뉴 데이','오디세이','모아나']
+let r3 = movie.map(function(el){
+ return el.length
+})
+console.log(r3)
+r3.sort(function(y,x){
+   // return y-x
+    return x-y
+})
+console.log(r3)
+
+//filter
+//retrun 한 것만 배열로 돌려준다
+
+let r6 = movie.filter(function(el,i,a){
+if(el.length >=4){
+    return true
+}else{ 
+    return false
+}
+})
+console.log(r6)
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

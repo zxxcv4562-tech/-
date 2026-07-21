@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+//함수 선언
+function hello(){
+    console.log('hello world')
+}
+//함수 사용
+hello()
+
+function getArea(width,height){
+    console.log(`width: ${width}, height: ${height}`)
+    let area = width *height
+    console.log('면적: ', area)
+}
+getArea(10,20)
+
+
+function getArea2(width,height){
+    console.log(`width: ${width}, height: ${height}`)
+    let area = width *height
+    return area 
+}
+let result = getArea2(10,20)
+console.log(result)
+
+function plus(x,y){
+    console.log('x: ',x)
+    console.log('y: ',y)
+const z= x+y
+return z
+}
+result = plus(2,3)
+console.log(result)
+
+result = plus(2, plus(5,6))
+console.log(result)
+
+
+    const a = 10
+{
+    const b = 20
+    console.log("b",b)
+}
+//console.log(b)
+
+
+function plus3(x,y=0){
+    console.log('x: ',x)
+    console.log('y: ',y)
+    if(y == undefined){
+        console.log('y값 입력 못받음')
+        y=0
+    }
+
+    const z= x+y
+    return z
+}    
+
+//전달 인자를 적게 줘도 에러 없음
+//값은 undefined
+//a = plus3(2)
+console.log(a)
+//전달 인자를 많이 줘도 에러없음
+//받을 인자값만 가져간다
+//a = plus3(2,3,4)
+
+//익명 함수
+let nomame = function () {
+    console.log('익명 함수')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+//tv 만들기
+// 채널 : 0~10까지
+// - 10일 때 up을 누르면 0번으로
+// 0일때 down을 누르면 10번으로
+
+//기능
+/*
+ 전원 on 
+ 전원 off
+ 채널(직접입력)
+ 채널 up
+ 채널 down
+ 볼륨 up
+ 볼륨 down
+음소거 on/off
+*/
+
+
+
+let power = false //전원 상태 저장
+let lastCh = 0
+let Sound = 0
+const CH_MAX = 10
+const CH_MIN = 0
+const SOUND_MAX = 5
+const SOUND_MIN = 0
+
+
+function powerOn(){
+    power = true
+    console.log('Tv 켜짐')
+}
+
+function powerOff(){
+   power = false
+    console.log('Tv 꺼짐')
+}
+function channel1(ch){
+    if(power){
+       if( ch< CH_MIN || ch> CH_MAX){
+        console.log('채널이 없습니다')
+     return  
+    }
+
+
+
+        lastCh = ch
+        console.log(ch+ '번으로 채널 변경')
+    }
+    else{
+        console.log('전원 꺼져있음')
+    }
+}
+function channel1UP(ch){
+if(power){
+    lastCh++
+    if(lastch > CH_MAX){lastCh = CH_MIN}
+    
+    // console.log(++lastCh+ '번으로 채널 변경')
+}
+else{
+    console.log('전원 꺼져있음')
+}
+}
+function channel1down(ch){
+if(power){
+     lastCh--
+     if(lastCh<0){lastCh = 10}
+    console.log(--lastCh+ '번으로 채널 변경')
+}
+else{
+    console.log('전원 꺼져있음')
+}
+}
+
+
+
+//  powerOn()
+//  channel1UP()
+//  powerOff()
+//  channel1UP()
+//  powerOn()
+//  channel1UP()
+
+function soundUP(So){
+    if(power){
+Sound++
+ if(Sound>SOUND_MAX){Sound = 5}
+
+}
+else{ 
+    console.log('전원 꺼져있음')}
+}
+
+function soundDown(So){
+    if(power){
+Sound--
+ if(Sound<SOUND_MIN){Sound = 0}
+
+}
+else{ 
+    console.log('전원 꺼져있음')}
+}
+
+powerOn()
+channel1UP()
+
+
+
+powerOff()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
